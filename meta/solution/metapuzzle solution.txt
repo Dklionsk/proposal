@@ -1,0 +1,31 @@
+Collect all puzzle solutions:
+
+A: HONEYCOMB
+B: HOMESTEADERS
+C: EVERNOTE
+D: MJOLNIR
+
+For each solution, sum the letters in the word:
+
+HONEYCOMB
+H + O + N + E + Y + C + O + M + B
+8 + 15 + 14 + 5 + 25 + 3 + 15 + 13 + 2 = 100
+
+honeycomb => 100
+homesteaders => 132
+evernote => 104
+mjolnir => 91
+
+For each puzzle there's a mapping from the sum to multiple numbers:
+
+honeycomb => 100 => 40 42
+homesteaders => 132 => 25 56
+evernote => 104 => 50 4
+mjolnir => 91 => 7 79
+
+Plug in the numbers to get coordinates:
+
+AA°BB'CC.D"N DD°BB'AA.C"W
+40°25'50.7"N 79°56'43.4"W
+
+The location is Schenley Park near the Disc Golf course.

@@ -1,0 +1,36 @@
+This is a puzzle about board games.
+
+1. You roll some dice. I roll some dice. You set one die aside and move some pieces of plastic a few inches. I set one die aside and pick up a piece of cut paper from a stack and hold it. You set another die aside. We both choose a piece of paper that we're holding and put it on the table. You roll some smaller dice. I roll some smaller dice. I take some plastic pieces off the table and put them in a box. (War of the Ring)
+
+2. I pick up a lot of pieces of paper from a stack. You pick up a lot of pieces of paper from a stack. We each take one of the pieces of paper and put them on the table. I take some small cardboard squares and put them in different places on top of a large piece of cardboard on the table. You put another piece of paper on the table and move some small cardboard pieces. I put another piece of paper on the table, roll a die, and remove some cardboard pieces. (Twilight Struggle)
+
+3. I pick up different colored pieces of paper from three different stacks of paper on the table. I move a piece of plastic with a piece of cardboard sticking up from it from one place on the table to another. I roll a die and take a piece of plastic off the table. I draw a larger piece of paper from a larger stack. All of us take turns putting down smaller colored pieces of paper into a pile. I shuffle the pile and count the pieces of paper. I turn a round piece of cardboard a few degrees clockwise. (Battlestar Galactica)
+
+4. I roll a die. Some of us pick up pieces of paper from different stacks of paper. I take some of my pieces of paper, put them back on those piles. I take a colored piece of wood and put it on the table. I give you some of my pieces of paper and you give me back a different piece of paper. (Settlers of Catan)
+
+5. I look at your pieces of paper. I flip over a round piece of cardboard and point to one of your pieces of paper. You take your piece of paper and put it on the table. You pick up another piece of paper. I take a piece of paper and put it on a stack of other pieces of paper and flip over another round cardboard piece. (Hanabi)
+
+6. I pick up some pieces of paper from a stack in front of me. I put one down on the table in front of me and pick up more. I put another one down, then several more that look the same down in front of me. I pick up a piece of paper from one of many stacks of paper in the middle of the table and put all the paper in front of me into a stack next to the first stack I picked up paper from. (Dominion)
+
+
+
+Find the acronyms in a string mixed with other letters, look at the letters below for a message.
+
+QWBSGFTSPIHHEJWOTRCVDZKNSOC
+earoclexwolgdrbyalnelieukwe
+
+qwBSGfTSpiHhejWOTRcvDzknSOC
+  roc ex  l   byal  l   kwe
+
+BSG TS H WOTR D SOC
+roc ex l byal l kwe
+
+1    2  3   4   5 6
+WOTR TS BSG SOC H D
+byal ex roc kwe l l
+
+1   2 3  4  56
+WOTRTSBSGSOCHD
+byalexrockwell
+
+"By Alex Rockwell" gives the answer, HOMESTEADERS.

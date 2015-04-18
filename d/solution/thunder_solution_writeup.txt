@@ -1,0 +1,61 @@
+=======
+Thunder
+=======
+
+The puzzle has two components: 
+- A map of Pittsburgh, with 4 locations marked by a red dot.
+- A page containing the title of the puzzle, the number "761.207 mph" the name and coordinate of each marked location, along with a list of times for each marked location.
+
+
+Solution:
+
+The 4 locations are "listening stations", which record the exact times that thunder was heard by those stations. Every clap of thunder heard by a listening station corresponds to a lightning strike location on the map. The first step of the puzzle is to find the locations of those lightning strikes with triangulation using the timing of the thunder. The number 761.207 mph is the speed of sound at sea level (this is both a hint that you need to be thinking about the speed of sound and also indicates *which* speed of sound you should be using). If you group lightning strikes by the hours in which they occurred and trace between their locations on the map, you can draw letters. The letters spell out a clue, THORSHAMMER, which hints the solution, MJOLNIR.
+
+
+Solution details:
+
+The calculation to use here is TDOA, Time Difference of Arrival. If you have the locations of two receivers and the time difference of the arrival of the sound to each of them, you can solve for a range of possible solutions for where the sound came from. Add a third receiver and you have enough information to solve for the exact location.
+
+I have no idea how to do this calculation by hand, but Wolfram Alpha can do it for you. You can either plug the numbers in to the web interface manually, or write a program that makes WA API calls to speed up the process.
+
+Example:
+
+(units are in meters)
+Station A location: (100, 100)
+Station B location: (200, 100)
+Station C location: (150, 150)
+
+Strike 1 heard at A = 0.07846 s
+Strike 1 heard at B = 0.2205 s
+Strike 1 heard at C = 0.1374 s
+
+Given ONLY those times and the locations of A, B, and C, how can you solve for the original lightning location?
+
+Speed of sound: 343.2 m/s
+
+time to B - time to A = .2205 - .07846 = .14204s
+.14204s * 343.2m/s = 48.748m
+B is 48.748m farther from the strike than A. 
+
+time to C - time to A = .1374 - .07846 = .05894
+.05894s * 343.2m/s = 20.228m
+C is 20.228m farther from the strike than A. 
+
+Strike occurred at unknown point (x,y)
+sqrt((x-200)^2+(y-100)^2)-sqrt((x-100)^2+(y-100)^2) = 48.748
+and
+sqrt((x-150)^2+(y-150)^2)-sqrt((x-100)^2+(y-100)^2) = 20.228
+
+Wolfram Alpha solves this to (124.992, 110.023), which is close enough to the correct answer, (125, 110).
+
+There are probably other programmatic ways to solve it, like a gradient descent method that estimates the right answer, but solving the equations seems like the easiest method.
+
+======
+
+Sketch file notes:
+
+Grid lines are every 100 pixels
+100 pixels ~= 1 mile
+Map isn't exactly to scale. Use the coordinates provided in the puzzle, instead of real-world coordinates.
+
+
